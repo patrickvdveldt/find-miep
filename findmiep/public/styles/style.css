@@ -1,0 +1,776 @@
+/*FONTS */
+
+@font-face {
+  font-family: Ubuntu-Regular;
+  src: url('../fonts/ubuntu/Ubuntu-R.ttf');
+}
+
+@font-face {
+  font-family: Ubuntu-Bold;
+  src: url('../fonts/ubuntu/Ubuntu-B.ttf');
+}
+
+@font-face {
+  font-family: Ubuntu-Light;
+  src: url('../fonts/ubuntu/Ubuntu-L.ttf');
+}
+
+@font-face {
+  font-family: SciFly-Sans;
+  src: url('../fonts/SciFly-Sans/SciFly-Sans.ttf');
+}
+
+* {
+  font-family: SciFly-Sans;
+
+}
+
+/* Standart */
+*::selection {
+    color: #fff;
+    background: #e51c20;
+}
+*:focus{
+  outline: none;
+}
+label{
+  padding-left: 5px;
+}
+button{
+  border: none
+}
+
+h1 {
+  font-family: Ubuntu-Regular;
+  text-align: center;
+  color: white;
+  font-weight: 100;
+}
+
+h2{
+  font-family: Ubuntu-Bold;
+}
+
+h4{
+  color: white;
+  font-size: 1.5em;
+}
+
+/*VIDEO BACKGROUND*/
+/*
+.fullscreen-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.fullscreen-background {
+    opacity: 0.4;
+    background-position: 10% 20%;
+}
+*/
+
+/* HEADER */
+
+header {
+  background-color: black;
+  margin-left: auto;
+  height: 8em;
+}
+
+#logo {
+  width: 24em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3em;
+  display: block;
+  position: relative;
+}
+
+#logo2 {
+  width: 24em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3em;
+  display: block;
+
+}
+
+/* BODY */
+
+.error
+{
+  float: right;
+  text-align: right;
+}
+
+
+.labelerror
+{
+
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.labelerror label
+{
+
+
+
+}
+
+
+.labelerror span
+{
+   color: red;
+   font-size: 15px;
+   text-align: left;
+   font-family: SciFly-Sans;
+   font-weight: lighter;
+   -webkit-font-smoothing: antialiased;
+
+}
+
+#uitleg > button{
+  background-color: #ff0016;
+  color: white;
+  padding: 0.5em;
+  width: 10em;
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-top: 2em;
+  border: none;
+  transition: background 0.4s ease;
+  cursor: pointer;
+}
+
+#uitleg{
+  width: 50em;
+  height: 17em;
+  margin-top: 6em;
+  background-color: white;
+  padding: 2em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.4s ease all;
+  opacity: 0;
+}
+
+#uitleg.verberg{
+  display: none;
+}
+
+#bedankje{
+  width: 50em;
+  height: 20em;
+  margin-top: 6em;
+  background-color: white;
+  padding: 2em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.4s ease all;
+  opacity: 0;
+}
+
+#bedankje button{
+  background-color: #ff0016;
+  color: white;
+  padding: 0.5em;
+  width: 10em;
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-top: 2em;
+  border: none;
+  transition: background 0.4s ease;
+  cursor: pointer;
+}
+
+#bedankje button:hover{
+  background: black;
+
+}
+
+#bedankje > img{
+  bottom: 0;
+  position: absolute;
+}
+
+#button-start {
+  background-color: #ff0016;
+  color: white;
+  padding: 0.5em;
+  width: 20em;
+  font-size: 1.5em;
+  font-weight: 100;
+  border: none;
+  transition: background 0.4s ease;
+  cursor: pointer;
+}
+
+#button-start:hover {
+  background: none;
+  cursor: pointer;
+  
+}
+
+button{
+  cursor: pointer;
+}
+
+#game-start{
+  background-color: #ff0016;
+  bottom: 1em;
+  color: white;
+  padding: 0.5em;
+  width: 20em;
+  font-size: 1.5em;
+  font-weight: 100;
+  border: none;
+  transition: background 0.4s ease;
+}
+
+#game-start:hover{
+  background: black;
+}
+
+#titel2 {
+  color: white;
+  font-size: 3em;
+  font-family: Ubuntu-Regular;
+}
+
+#tekst2 {
+  position: relative;
+  color: white;
+  font-size: 1.5em;
+  font-family: SciFly-Sans;
+  font-weight: lighter;
+
+}
+
+div > h3{
+  color: white;
+  font-size: 2em;
+  font-family: SciFly-Sans;
+  font-weight: lighter;
+  margin-top: -2.5em;
+  margin-left: 1.5em;
+  border-left: none;
+}
+
+#miep-medium {
+  float: right;
+  margin-top: -8em;
+  width: 21em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#miep-groot {
+position: absolute;
+right: 0;
+float: right;
+margin-right: 5em;
+/* margin-top: -5em; */
+bottom: 0;
+width: 54em;
+}
+
+.miep-animated {
+  margin-left: -1em;
+  margin-right: -1em;
+  margin-top: -1.4em;
+  width: 12em;
+  transition: 0.4s ease all;
+}
+
+.found-miep {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  width: 3.5em;
+  transition: 0.4s ease all;
+}
+
+.miep-animated:hover {
+  transform: scale(1.2);
+}
+
+p {
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.03em;
+  line-height: 1.3;
+
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+body {
+  background-color: black;;
+}
+
+.home {
+  margin-left: auto;
+  margin-right: auto;
+  background: black;
+  height: 63em;
+  width: 100%;
+  position: relative;
+  background: none;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5em;
+  position:absolute;
+  transition: 0.3s;
+  opacity: 0
+}
+
+.game-intro{
+  margin-top: -5em;
+  border-left: 2px solid #ff0016;
+  margin-left: 3em;
+}
+
+#game {
+  background-color: black;
+}
+
+#opacity{
+  opacity: 0.1;
+}
+
+#opacity.opacity {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.intro {
+  border-left: 2px solid #ff0016;
+  width: auto;
+  padding-left: 1em;
+  margin-left: 7em;
+}
+
+.uitleg {
+  position: absolute;
+  padding-left: 2em;
+  margin-left: 7em;
+}
+
+.intro2 {
+  padding-bottom: 4em;
+  margin-top: -3em;
+  margin-bottom: -3em;
+  width: 100%;
+  background-color: black;
+}
+
+#animate {
+  display: none;
+}
+
+#timer {
+  background-color: #ff0016;
+  width: 8em;
+  text-align: center;
+  float: right;
+  color: white;
+  font-size: 1em;
+  font-weight: 100;
+  margin-right: 5em;
+  margin-top: -2em;
+}
+
+/*FORM*/
+
+#curtime {
+  background-color: black;
+  color: white;
+}
+
+#meta {
+  text-align: center;
+  width: 100%;
+  padding: -2em;
+}
+
+#formulier {
+  width: 50em;
+  height: 35em;
+  margin-top: 6em;
+  /*border-radius: 1em;*/
+  background-color: white;
+  padding: 1.5em;
+  padding-top: -1em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  /*display: none;*/
+  transform: scale(0,0);
+}
+
+.inputform {
+    width: 96%;
+    height: 2em;
+    background-color: whitesmoke;
+    margin-bottom: 1em;
+    font-size: 1em;
+    padding-left: 5px;
+    margin: 4px 0 10px;
+    border: 1px solid #cccccc;
+}
+
+input:{
+  border: 2px dashed red;
+}
+
+.checkboxes {
+  margin-bottom: 1em;
+  float: left;
+}
+
+form > button {
+  background-color: red;
+  color: white;
+  font-size: 1em;
+  padding: 1em;
+  font-weight: 100;
+  margin-top: 1em;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  line-height: 1em;
+}
+
+form > button:hover {
+  background-color: black;
+}
+
+/*FOOTER*/
+
+#home-footer{
+  height: 9em;
+  position: fixed;
+}
+
+#miep-groot2 {
+  float: left;
+  position: fixed;
+  bottom: 15em;
+  margin-left: 6em;
+  width: 35em;
+}
+
+footer {
+  background: #1f1e1e;
+  position: fixed;
+  height: 12em;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+.contact {
+  padding-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: #ff0016;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1024px) {
+
+  #uitleg {
+    top: 5em;
+    margin: auto;
+    width: auto;
+    height: 100%;
+  }
+
+  div > h3{
+    font-size: 1em;
+    margin: 0;
+    margin-top: 1em;
+  }
+
+  #game{
+    width: auto;
+  }
+
+  .game {
+    margin-top: -3em;
+    text-align: center;
+    position: relative;
+  }
+  footer {
+    display: none;
+  }
+  .miep-animated {
+    width: 7em;
+  }
+
+  #miep-medium{
+    display: none;
+  }
+
+  #bedankje {
+    margin: auto;
+    width: auto;
+    height: auto;
+    top: 5.5em;
+  }
+
+  #formulier {
+    top: 1em;;
+    margin: auto;
+    width: auto;
+    height: 45em;
+  }
+  #titel2 {
+    margin-top: 0;
+    color: white;
+    font-size: 2.2em;
+  }
+
+  #titel3 {
+    color: black;
+  }
+
+  #tekst2 {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 100;
+    width: auto;
+  }
+
+  #tekst3 {
+    color: black;
+    font-size: 1.2em;
+    font-weight: 100;
+    width: auto;
+  }
+
+  #button-start {
+    width: auto;
+    margin-top: 2em;
+    font-size: 1.3em;
+  }
+
+  #timer {
+    background-color: black;
+    margin: 1em;
+    margin-right: -1em;
+    top: 0;
+    border-radius: 0;
+    right: 0;
+    position: fixed;
+  }
+
+  #miep-groot {
+    display: none;
+  }
+
+  .inputform {
+    height: 2em;
+  }
+
+  .home {
+    height: 0;
+  }
+
+  .intro {
+    width: 20em;
+    display: block;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    border-left: none;
+  }
+
+  .intro2 {
+    width: 20em;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    border-left: none;
+  }
+
+  .game-intro{
+    width: 100%;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    border-left: none;
+  }
+
+  #logo {
+    width: 9em;
+    margin: 0;
+    float: left;
+    position: relative;
+  }
+
+  #logo2 {
+    width: 9em;
+    margin-top: 0;
+    float: left;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1024px) {
+
+  #bedankje{
+    height: 25em;
+  }
+
+  #uitleg{
+
+    height: 15em;
+  }
+
+  .miep-animated {
+    width: 9em;
+  }
+
+  #miep-medium{
+    display: block;
+    width: 30em;
+  }
+
+  #miep-groot {
+    margin: 0;
+    padding: 0;
+    float: right;
+    width: 40em;
+    margin-top: -3em;
+    position: absolute;
+    right: 0px;
+
+  }
+
+  .intro {
+      border-left: 2px solid #ff0016;
+      width: 30em;
+      padding-left: 1em;
+      margin-left: 3em;
+  }
+
+  .intro2 {
+    width: 30em;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    border-left: none;
+  }
+
+  #titel2 {
+    margin-top: 0;
+    color: white;
+    font-size: 3em;
+  }
+
+  #tekst2 {
+    position: relative;
+    color: white;
+    font-size: 1.3em;
+    font-family: SciFly-Sans;
+    font-weight: lighter;
+    margin-top: -1em;
+  }
+
+  #formulier{
+    margin-top: 4em;
+  }
+
+ }
+
+@media (min-width: 320px) and (max-width: 650px) {
+
+  header {
+      height: 8em;
+  }
+
+
+  .inputform {
+      width: 96%;
+      background-color: whitesmoke;
+      margin-bottom: 1em;
+      font-size: 16px;
+      padding-left: 5px;
+      margin: 3px 0 9px;
+      border: 1px solid #cccccc;
+  }
+
+  h2{
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+
+
+  .miep-animated {
+    width: 6em;
+    margin-top: -3.5em;
+  }
+
+  #miep-groot {
+    margin: 0;
+    padding: 0;
+    float: right;
+    width: 15em;
+    margin-top: -3em;
+    position: absolute;
+    right: 0px;
+
+  }
+
+
+
+
+}
